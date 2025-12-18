@@ -1,0 +1,145 @@
+/* Import del font */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* Video di sfondo */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Oscuramento – modifica opacity per regolare la luminosità */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.35; /* Modifica questo valore per più o meno oscurità */
+    z-index: -1;
+}
+
+/* Menu a tendina */
+nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Bottone menu */
+.dropbtn {
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    padding: 14px 26px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+/* Hover bottone */
+.dropbtn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+}
+
+/* Contenitore dropdown */
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 260px;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    overflow: hidden;
+
+    /* Animazione */
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.35s ease;
+}
+
+/* Mostra menu */
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Voci menu */
+.dropdown-content a {
+    color: white;
+    padding: 14px 22px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Hover voci */
+.dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    padding-left: 30px;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px; /* Regolabile */
+}
+
+/* Titolo centrale */
+.main-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+}
+
+#background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    overflow: hidden;
+}
+
+#bg-image, #bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 1s ease-in-out; /* fade tra una foto e l’altra */
+}
+
