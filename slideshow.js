@@ -1,14 +1,14 @@
 // Lista di foto o video (puoi aggiungerne quante vuoi)
 const mediaList = [
-    { type: "image", src: "2.jpg" },
-    { type: "image", src: "Pineta1.jpg" },
-    { type: "image", src: "Campo da calcio2.jpg" },
-    { type: "video", src: "360 Pineta-Mare.mp4" },
-    { type: "image", src: "4.jpg" },
-    { type: "image", src: "Piazza delle Baleari.jpg" },
-    { type: "image", src: "Porto1.jpg" },
-    { type: "image", src: "Pineta3.jpg" },
-    { type: "video", src: "Porto3.mp4" }
+    { type: "image", src: "2.JPG" },
+    { type: "image", src: "Pineta1.JPG" },
+    { type: "image", src: "Campo da calcio2.JPG" },
+    { type: "video", src: "360 Pineta-Mare.MP4" },
+    { type: "image", src: "4.JPG" },
+    { type: "image", src: "Piazza delle Baleari.JPG" },
+    { type: "image", src: "Porto1.JPG" },
+    { type: "image", src: "Pineta3.JPG" },
+    { type: "video", src: "Porto3.MP4" }
 ];
 
 // Durata di ogni slide in millisecondi (es: 5000 = 5 secondi)
@@ -48,5 +48,6 @@ function startSlideshow() {
         showSlide(currentIndex);
     }, slideDuration);
 }
+
 
 startSlideshow();
